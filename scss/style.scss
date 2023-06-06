@@ -1,0 +1,148 @@
+@import 'reset';
+@import 'mixins';
+@import 'vars';
+@import 'fonts';
+@import 'global';
+
+
+.header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 28px;
+}
+
+.hero {
+  position: relative;
+  background-image: url(../images/hero-img.png);
+  background-size: 1065px;
+  padding: 216px 0 0;
+  margin-bottom: 35px;
+  height: 706px;
+  background-position: center right -43px;
+  background-repeat: no-repeat;
+
+  &__offer {
+    max-width: 513px;
+  }
+
+  &__title {
+    font-size: 67px;
+    font-weight: 400;
+    margin-bottom: 50px;
+  }
+
+  &__subtitle {
+    font-size: 27px;
+  }
+
+  &__bottom {
+    max-width: 497px;
+    text-align: right;
+    margin-right: 0;
+    margin-left: auto;
+    margin-top: -50px;
+    margin-bottom: 80px;
+  }
+}
+
+.products {
+  margin-bottom: 130px;
+
+  &__list {
+    display: flex;
+    gap: 70px;
+  }
+
+  &__item {
+    max-width: 407px;
+    width: 100%;
+
+    .product-card__head {
+      background-color: #99A98F;
+    }
+
+    &:nth-child(2n) .product-card__head {
+      background-color: #E0D8B0;
+    }
+  }
+}
+
+.product-card {
+  max-width: 407px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+
+  &__head {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 551px;
+    margin-bottom: 20px;
+  }
+
+  &__info {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    max-width: 344px;
+    text-align: center;
+    margin: 0 auto;
+    flex-grow: 1;
+  }
+
+  &__descr {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+
+  &__price {
+    // display: block;
+    margin-top: auto;
+    margin: auto auto 0;
+    font-size: 48px;
+    font-weight: 700;
+  }
+}
+
+.propos {
+  &__title {
+    text-align: center;
+    font-size: 40px;
+    font-weight: 400;
+    margin-bottom: 61px;
+  }
+
+  &__wrapper {
+    background-image: url(../images/propos-bg.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+  }
+
+  &__wrapper .container {
+    position: relative;
+  }
+
+  &__text {
+    font-family: 'Engravers MT', sans-serif;
+    font-size: 32px;
+    color: #fff;
+    position: absolute;
+    text-align: center;
+
+    &--left {
+      left: 0;
+      top: 35px;
+      max-width: 612px;
+    }
+
+    &--right {
+      right: 0;
+      top: 324px;
+      max-width: 519px;
+    }
+  }
+}
