@@ -12,6 +12,9 @@
   <link rel="mask-icon" href="favicon/safari-pinned-tab.svg" color="#5bbad5">
   <meta name="msapplication-TileColor" content="#da532c">
   <meta name="theme-color" content="#ffffff">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css"
+    integrity="sha512-1cK78a1o+ht2JcaW6g8OXYwqpev9+6GqOkz9xmBN9iUUhIndKtxwILGWYOSibOKjLsEdjyjZvYDq/cZwNeak0w=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
   <link rel="stylesheet" href="css/style.min.css">
   <title>Aromatherapy</title>
 </head>
@@ -46,7 +49,7 @@
         <ul class="products__list">
           <li class="products__item">
             <article class="product-card">
-              <div class="product-card__head">
+              <div class="product-card__head" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="300">
                 <img class="product-card__img" src="images/product-1.png" alt="Духи с запахом Тайги">
               </div>
               <div class="product-card__info">
@@ -59,7 +62,7 @@
           </li>
           <li class="products__item">
             <article class="product-card">
-              <div class="product-card__head">
+              <div class="product-card__head" data-aos="zoom-in" data-aos-duration="3000" data-aos-delay="700">
                 <img class="product-card__img" src="images/product-2.png" alt="Духи с запахом Olkhon">
               </div>
               <div class="product-card__info">
@@ -73,7 +76,7 @@
           </li>
           <li class="products__item">
             <article class="product-card">
-              <div class="product-card__head">
+              <div class="product-card__head" data-aos="fade-left" data-aos-duration="2500" data-aos-delay="500">
                 <img class="product-card__img" src="images/product-3.png" alt="Духи с запахом Алтая">
               </div>
               <div class="product-card__info">
@@ -95,17 +98,21 @@
       </div>
       <div class="propos__wrapper">
         <div class="container">
-          <p class="propos__text propos__text--left">
-            <span>GUCCI Memoire D´Une Odeur</span> - Это элитные духи с фужерным ароматом для женщин и мужчин.
-            Элегантный и эксклюзивный аромат.
-            Открывается изысканными нотками римской ромашки, дополненными легкими акцентами горького миндаля.
-          </p>
-
-          <p class="propos__text propos__text--right">
-            В сердце парфюмерной воды переливаются нежные оттенки лепестков кораллового жасмина и чувственного мускуса,
-            а в шлейфе
-            аромата от <span>Gucci</span> звучат теплый сандал, бархатистые ноты кедра и изящная ваниль.
-          </p>
+          <div data-aos="fade-right" data-aos-duration="2500" data-aos-delay="300">
+            <p class="propos__text propos__text--left">
+              <span>GUCCI Memoire D´Une Odeur</span> - Это элитные духи с фужерным ароматом для женщин и мужчин.
+              Элегантный и эксклюзивный аромат.
+              Открывается изысканными нотками римской ромашки, дополненными легкими акцентами горького миндаля.
+            </p>
+          </div>
+          <div data-aos="fade-left" data-aos-duration="2500" data-aos-delay="500">
+            <p class="propos__text propos__text--right">
+              В сердце парфюмерной воды переливаются нежные оттенки лепестков кораллового жасмина и чувственного
+              мускуса,
+              а в шлейфе
+              аромата от <span>Gucci</span> звучат теплый сандал, бархатистые ноты кедра и изящная ваниль.
+            </p>
+          </div>
         </div>
       </div>
     </section>
@@ -113,7 +120,9 @@
 
 
 
-
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"
+    integrity="sha512-A7AYk1fGKX6S2SsHywmPkrnzTZHrgiVT7GcQkLGDe2ev0aWb8zejytzS8wjo7PGEXKqJOrjQ4oORtnimIRZBtw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
   <script src="js/main.js"></script>
 </body>
 
